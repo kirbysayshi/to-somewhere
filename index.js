@@ -163,8 +163,8 @@ function foursquare(pos, cb) {
     + '&v=20150322'
     + '&ll=' + pos.coords.latitude + ',' + pos.coords.longitude
     + '&llAcc=' + pos.coords.accuracy
-    + '&section=trending'
-    //+ '&openNow=1'
+    + '&section=sights'
+    + '&openNow=1'
     + '&radius=' + radius
 
   console.log(url);
