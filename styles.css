@@ -7,11 +7,17 @@ html, body, .screen {
   overflow: hidden;
 }
 
+.debug {
+  font-family: monospace;
+}
+
 .arrow-mover {
   position: absolute;
   left: 50vw;
-  top: 50vh;
-  transform-origin: 50% 50vh 0px;
+  top: 20vh;
+  -webkit-transform-origin: 0 30vw 0px;
+  transform-origin: 0vw 30vw 0px;
+  -webkit-transition: -webkit-transform 0.3s linear;
   transition: transform 0.3s linear;
 }
 
