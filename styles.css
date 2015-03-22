@@ -1,0 +1,39 @@
+html, body, .screen {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.arrow-mover {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  transform-origin: 50% 50vh 0px;
+  transition: transform 0.3s linear;
+}
+
+.arrow {
+  position: absolute;
+  width: 0px;
+  height: 0;
+  border-top: 10vw solid transparent;
+  border-bottom: 10vw solid black;
+  border-right: 10vw solid transparent;
+  border-left: 10vw solid transparent;
+  margin-left: -10vw;
+}
+
+.arrow::after {
+  display: block;
+  position: absolute;
+  content: " ";
+  width: 30vw;
+  height: 30vw;
+  border-radius: 1000px;
+  background-color: white;
+  left: -15vw;
+  bottom: -36vw;
+}
